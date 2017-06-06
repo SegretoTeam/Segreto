@@ -106,58 +106,6 @@ else
 end
 end
 
- local function config_cb(arg, data)
-local hash = "gp_lang:"..arg.chat_id
-local lang = redis:get(hash)
-  print(serpent.block(data))
-   for k,v in pairs(data.members_) do
-   local function config_mods(arg, data)
-       local administration = load_data(_config.moderation.data)
-if data.username_ then
-user_name = '@'..check_markdown(data.username_)
-else
-user_name = check_markdown(data.first_name_)
-end
-if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
-    return
-   end
-administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
-    save_data(_config.moderation.data, administration)
-   end
-tdcli_function ({
-    ID = "GetUser",
-    user_id_ = v.user_id_
-  }, config_mods, {chat_id=arg.chat_id,user_id=v.user_id_})
- 
-if data.members_[k].status_.ID == "ChatMemberStatusCreator" then
-owner_id = v.user_id_
-   local function config_owner(arg, data)
-  print(serpent.block(data))
-       local administration = load_data(_config.moderation.data)
-if data.username_ then
-user_name = '@'..check_markdown(data.username_)
-else
-user_name = check_markdown(data.first_name_)
-end
-if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
-    return
-   end
-administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
-    save_data(_config.moderation.data, administration)
-   end
-tdcli_function ({
-    ID = "GetUser",
-    user_id_ = owner_id
-  }, config_owner, {chat_id=arg.chat_id,user_id=owner_id})
-   end
-end
-  if not lang then
-    return tdcli.sendMessage(arg.chat_id, , 0, "*All Group* `Admins` *Has Been Promoted To* `Moderators` *And SuperGroup* `Creator` *Has Been Added To* `Owner List`"..Segreto, 0, "md")
-else
-    return tdcli.sendMessage(arg.chat_id, , 0, "_تمام ادمین های گروه به مقام مدیر منتصب شدند و سازنده گروه به مقام مالک گروه منتصب شد_"..Segreto, 0, "md")
-     end
- end
-
 local function filter_word(msg, word)
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
@@ -4326,17 +4274,6 @@ end
 	end
 end
 
-if (matches[1]:lower() == "panel"  or matches[1] == "پنل") and is_mod(msg) then
-local function inline_query_cb(arg, data)
-      if data.results_ and data.results_[0] then
-tdcli.sendInlineQueryResultMessage(msg.to.id, 0, 0, 1, data.inline_query_id_, data.results_[0].id_, dl_cb, nil)
-    else
-  return tdcli.sendMessage(msg.to.id, msg.id, 0, "*API Robot* Is Offline ", 0, "md")
-   end
-   end
-getInlineQueryResults(helper_id, msg.to.id, 0, 0, msg.to.id, 0, inline_query_cb, nil)
-end
-
 end
 local checkmod = true
 -----------------------------------------
@@ -4563,10 +4500,8 @@ command .. '([Ll]ockseconds) (%d+)$',
 '^([Mm]utehours) (%d+)$',
 '^([Mm]uteminutes) (%d+)$',
 '^([Mm]uteseconds) (%d+)$',
-'^[/!]option',
 },
 patterns_fa = {
-'^(به زودی😐)',
 '^(ایدی)$',
 '^(ایدی) (.*)$',
 '^(تنظیمات)$',
