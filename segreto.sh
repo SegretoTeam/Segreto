@@ -23,13 +23,8 @@ install() {
 
 
 if [ "$1" = "install" ]; then
-	print_logo
-	beyondteam
-	logo_play
 	install
 elif [ "$1" = "update" ]; then
-	logo_play
-	beyondteam
 	update
 else
 if [ ! -f ./libs/tgcli ]; then
