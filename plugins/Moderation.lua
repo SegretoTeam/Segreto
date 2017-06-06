@@ -3690,7 +3690,7 @@ tdcli_function ({
     end
        end
 	   if matches[1]:lower() == 'kossher' then
-	    return tdcli.sendMessage(msg.to.id, msg.id, 1, kos, 1, 'md')
+	    return tdcli.sendMessage(msg.to.id, msg.id, 1, '..kos..', 1, 'md')
 end  
 		if (matches[1]:lower() == 'clean' or matches[1] == 'پاک کردن') and is_owner(msg) then
 		if not lang then
