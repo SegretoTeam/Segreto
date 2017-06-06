@@ -4524,7 +4524,7 @@ command .. '([Ll]ockseconds) (%d+)$',
 "^([Nn][Ee][Ww][Ll][Ii][Nn][Kk])$",
 "^([Nn][Ee][Ww][Ll][Ii][Nn][Kk]) (pv)$",  
 "^([Rr][Uu][Ll][Ee][Ss])$",
-"^([Kk][Oo][Ss][Ss][HH][Ee][Rr])"
+"^([Kk][Oo][Ss][Ss][HH][Ee][Rr])",
 "^([Ss][Ee][Tt][Tt][Ii][Nn][Gg][Ss])$",
 "^([Ss][Ee][Tt][Rr][Uu][Ll][Ee][Ss]) (.*)$",
 "^([Aa][Bb][Oo][Uu][Tt])$",
