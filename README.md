@@ -33,8 +33,9 @@ cd $HOME && git clone https://github.com/SegretoTeam/Segreto && cd Segreto && ch
 # Support 
 
 More information: 
+
 [Segreto Support](https://t.me/joinchat/AAAAAEJ2GQVe6-3FRDghSQ)
--
+
 [Segreto Channel](https://t.me/SegretoTeam)
 
 * * *
@@ -48,5 +49,6 @@ More information: 
 * * *
 # Special thanks to
 [Solid](https://t.me/solid)
+
 [To0fan](https://telegram.me/ToOfan)
 
