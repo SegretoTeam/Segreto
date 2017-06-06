@@ -34,11 +34,9 @@ cd $HOME && git clone https://github.com/SegretoTeam/Segreto && cd Segreto && ch
 
 More information: 
 [Segreto Support](https://t.me/joinchat/AAAAAEJ2GQVe6-3FRDghSQ)
-[Segreto Channel]()https://t.me/SegretoTeam)
+-
+[Segreto Channel](https://t.me/SegretoTeam)
 
-# Special thanks to
-[Solid](https://t.me/solid)
-[To0fan](https://telegram.me/ToOfan)
 * * *
 
 # Developers!
@@ -46,3 +44,9 @@ More information: 
 [PrswShrr](https://t.me/PrswShrr) - [GitHub](https://github.com/parsaw)
 
 [MrAmirDev](https://t.me/mramirdev)
+
+* * *
+# Special thanks to
+[Solid](https://t.me/solid)
+[To0fan](https://telegram.me/ToOfan)
+
