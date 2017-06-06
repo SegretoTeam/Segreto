@@ -152,9 +152,9 @@ tdcli_function ({
    end
 end
   if not lang then
-    return tdcli.sendMessage(arg.chat_id, , 0, "*All Group* `Admins` *Has Been Promoted To* `Moderators` *And SuperGroup* `Creator` *Has Been Added To* `Owner List`"..Segreto.." ", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, , 0, "*All Group* `Admins` *Has Been Promoted To* `Moderators` *And SuperGroup* `Creator` *Has Been Added To* `Owner List`"..Segreto, 0, "md")
 else
-    return tdcli.sendMessage(arg.chat_id, , 0, "_تمام ادمین های گروه به مقام مدیر منتصب شدند و سازنده گروه به مقام مالک گروه منتصب شد_"..Segreto.." ", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, , 0, "_تمام ادمین های گروه به مقام مدیر منتصب شدند و سازنده گروه به مقام مالک گروه منتصب شد_"..Segreto, 0, "md")
      end
  end
 
